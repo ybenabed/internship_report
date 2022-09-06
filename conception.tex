@@ -28,37 +28,37 @@ through the following three steps:
 \subsection{Preprocessing}
 The indexes are based on the column types, 2 types are considered: textual
 columns and non textual columns (numerical columns). The preprocessing will be
-different in function of the column separation process:
+different depending on the column separation process:
 \subsubsection{Non-Textual (Numerical) columns}
 One of cross-polytope requirements is that the data should have a size equal to
 a power of 2, for this we'll set this size on a value between 128 to 2048, and
 we'll call it \mbox{DEFAULT\_DATA\_SIZE}.
 
-A random sample of a size \mbox{DEFAULT\_DATA\_SIZE} is picked for each column
+A random sample of size \mbox{DEFAULT\_DATA\_SIZE} is picked for each column
 and then normalized to have the data ready to be indexed with cross-polytope.
 
 \subsubsection{Textual columns}
 The textual columns have a different type of preprocessing, is it based on
 embedding them with a pre-trained embedding model according to a certain
 approach that indicates how the embedding model is used over all the cells to
-have at the end on vector representing the column content. Four approaches will
-be tested to pick the most accurate one.
+have as a result one vector representing the column content. Four approaches
+will be tested to pick the most accurate one.
 
 \paragraph{Approach 1}: The idea of this approach is to concatenate the texts of
 each cell to have one text that will be embedded with the chosen embedding
 model. The output will depend on this embedding model, and the last step will be
-to pad with zeros this output to make it of a size equal to a power of 2.
+to pad this output with zeros to make it of a size equal to a power of 2.
 
 \paragraph{Approach 2}: This approach consists of embedding each cell on its own
 with the chosen embedding model, and then to concatenate this embeddings to form
 one vector that will be the output of this approach.
 
-\paragraph{Approach 3}: This approach has the same logic of the previous one, it
+\paragraph{Approach 3}: This approach has the same logic as the previous one, it
 adds an extra step which is to perform a PCA on each embedding just before
-concatenating in order to have more control on the size of the output and to
-make it easily satisfy the cross-polytope conditions.
+concatenating in order to have more control over the size of the output and to
+make it satisfy the cross-polytope conditions easily.
 
-\paragraph{Approach 4}: This approach has also the same logic of the second one,
+\paragraph{Approach 4}: This approach also has the same logic of the second one,
 meaning that it starts with embedding each cell independently, and then get the
 mean of each component of the embedding vector.
 \begin{equation}
@@ -74,7 +74,8 @@ Where:
         embedding.
     \end{itemize}
 \end{multicols}
-The last step in this approach will be to pad with zeros this output to make it
+
+The last step in this approach will be to pad this output with zeros to make it
 of a size equal to a power of 2.
 
 
@@ -88,13 +89,13 @@ LSH.
 
 Two parameters need to be tuned at this level, the number of hashing functions
 to apply by Cross-Polytope LSH, and the number of probes to consider by
-Multi-Probe. The choice of these two parameters is explained in the section
+Multi-Probe. The choice of these two parameters is explained in section
 \ref{chap:exp_and_tests}
 
 This step outputs two group of indexes, the group of textual column indexes, and
 the group of non-textual column indexes. Each column index is represented by an
 array of 2 dimensions, where each row represents the result of the corresponding
-hashing function, and each column represent an element of the probing sequence
+hashing function, and each column represents an element of the probing sequence
 for this hashing function result.
 
 The figure \ref{fig:indexation_process} illustrates the process of preprocessing
@@ -135,7 +136,7 @@ done by the following steps:
 \begin{itemize}
     \item Use two groups of bucket, the first one for the textual columns and
     the second for the non-textual column.
-    \item Assign each column to a number of buckets in function of its
+    \item Assign each column to a number of buckets depending on its
      calculated index and its type.
     \item Measure the collision rate between the columns that share at least one
     bucket to give their similarity measure (a score between 0 and 1).
@@ -154,23 +155,23 @@ components have been used:
     \item \textbf{Preprocessing}: It consists of the classes responisble for the
     preprocessing phase, its main class is $DataPreprocessing$ that assures the
     different types of preprocessing (noramlization, sampling, embedding..) with
-    the use of two other classes, $Embedder$ and $EmbeddingModel$ used for embed
+    the use of two other classes, $Embedder$ and $EmbeddingModel$ used to embed
     the textual columns of a dataset.
     \item \textbf{Hashing}: It is the component that assures the indexation
-    process, two classes have been used for computing the indexes:
+    process, two classes have been used to compute the indexes:
     $CrossPolytope$ and $MultiProbeCrossPolytope$, while the class $Index$ is
     used to represent the index computed for a dataset, 
     \item \textbf{Storing}: It consists of one class that manages the storing
     of the computed indexes
-    \item \textbf{Query}: This component gives the features of detecting the
+    \item \textbf{Query}: This component gives the features used to detect the
     similarities between indexes through the class $LSHQuery$, and to manage
     their results through the class $QueryResult$
-    \item \textbf{Plotting}: With this components, the results given by
-    $QueryResult$ are represented graphically with different types of diagrams.
+    \item \textbf{Plotting}: With this component, the results given by
+    $QueryResult$ are represented graphically with two types of graphs.
 \end{itemize}
 
-The figure \ref{fig:class_diagram} represent the class diagram with its
-diffrents components as explained in the previous paragraph.
+The figure \ref{fig:class_diagram} represents the class diagram with its
+diffrent components as explained in the previous paragraph.
 
 \begin{figure}[h]
     \centering
