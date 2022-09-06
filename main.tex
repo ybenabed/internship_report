@@ -1,0 +1,54 @@
+\documentclass [a4paper,12pt,oneside,final]{report}
+\addtolength{\skip\footins}{2pc plus 5pt}
+
+\usepackage[top=2.5cm,bottom=2.5cm,right=2.5cm,left=2.5cm]{geometry}
+\usepackage{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{subfiles}
+\usepackage{nameref}
+\usepackage{fontenc}
+\usepackage{diagbox}
+
+\usepackage{graphicx}
+\usepackage{caption}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tabularx}
+
+\usepackage{hyperref}
+
+
+\usepackage{caption}
+\graphicspath{ {figures/}}
+
+\usepackage[ruled,vlined, onelanguage, linesnumbered]{algorithm2e}
+\usepackage{glossaries}
+\subfile{acronyms.tex}
+\subfile{vocable}
+
+\title{Rapport de stage}
+\date{May 2022}
+
+% \makeglossaries
+\makenoidxglossaries
+
+\begin{document}
+\pagenumbering{roman}
+% \printnoidxglossaries
+
+\clearpage
+\pagenumbering{arabic}
+\include{general_introduction}
+% \include{state_of_the_art}
+\include{conception}
+% \include{realization}
+\include{tests}
+% \include{tests}
+
+\bibliographystyle{apalike}
+\bibliography{database}
+
+\end{document}

@@ -1,0 +1,100 @@
+\subsection{Indexation hyper-parameters}
+In this second test the goal is to find the best combination of number of the
+hashing functions to use in indexation and the number of probes to use in
+Multi-Probe LSH. The best combination is the one that gives the index with the
+minimum error of estimation of the angular distance. To do this, a list of
+values for each of the two variables and a set of 1000 dataset couples have been
+set, and the error for a combination of a number of probes and a number of
+hashing functions is computed by computing the mean absolute error for each
+couple of datasets and computing the mean of error over all the list of couples.
+
+The pseudo-algorithm \ref{alg:crosspolytope_test} describes the steps to
+complete this test routine.
+
+\begin{algorithm}[H]
+    \SetAlgoLined
+    \label{alg:crosspolytope_test}
+    \KwIn{num\_probes: List of integer\;
+        num\_hashes: List of integer\;
+        dataset\_list: List of dataset couples.
+    }
+    error\_matrix: matrix
+
+    \For{(num\_probe, num\_hash) in (num\_probes, num\_hashes)}
+    {
+        errors = []
+
+        \For{($dataset_1$, $dataset_2$) in dataset\_list}
+        {
+            error = similarity\_estimation\_error($dataset_1$, $dataset_2$)
+            add\_element(errors, error)
+        }
+        error\_matrix[num\_probe, num\_hash] = mean(errors)
+    }
+
+    \Return error\_matrix
+    \caption{Pseudo-algorithm for the similarity estimation test routine.}
+
+\end{algorithm}
+
+The similarity\_estimation\_error function is computed by indexing the datasets
+in input with the corresponding configuration and compute the mean absolute
+error with the exact similarities.
+
+The results of this test are represented in the following table where the
+columns correspond to the number of probe values and the rows correspond to the
+number of hashing functions.
+
+\hspace{1cm}
+
+\begin{table}[h]
+    \begin{center}
+        \begin{tabular}{|c | c | c | c| c| c| c|}
+            \hline
+            \diagbox[width=10em]{Number of                                    \\hashing func}{Number of\\Probes}
+                          & \textbf{3} & \textbf{4} & \textbf{5} &
+            \textbf{6}    & \textbf{7} & \textbf{8}                           \\
+            \hline
+
+            \textbf{16}   & 0.084150   & 0.091189   & 0.102268   & 0.114099 &
+            0.126253      & 0.138592                                          \\
+            \hline
+            \textbf{32}   & 0.069658   & 0.073694   & 0.084380   & 0.097009 &
+            0.110436      & 0.123476                                          \\
+            \hline
+            \textbf{64}   & 0.060197   & 0.063477   & 0.075861   & 0.090637 &
+            0.105167      & 0.119083                                          \\
+            \hline
+            \textbf{128}  & 0.054985   & 0.056040   & 0.069854   & 0.086120 &
+            0.101522      & 0.115687                                          \\
+            \hline
+            \textbf{256}  & 0.049240   & 0.055169   & 0.072686   & 0.089780 &
+            0.105259      & 0.119369                                          \\
+            \hline
+            \textbf{512}  & 0.047183   & 0.053220   & 0.072063   & 0.089319 &
+            0.104874      & 0.119079                                          \\
+            \hline
+            \textbf{1024} & 0.046043   & 0.052195   & 0.071337   & 0.088481 &
+            0.103913      & 0.117931                                          \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{Results for the multi-probe hyper-parameters testing}
+    \label{table:multiprobe_hyperparameters}
+\end{table}
+
+
+
+The table \ref{table:multiprobe_hyperparameters} shows the results of this
+experiment, from which we can take the following points:
+\begin{itemize}
+    \item The best configurations gave errors in the interval of $[0.45, 0.55]$.
+    \item The results confirms the theoretical result in
+          \citep{andoni_practicalsh_2015} saying that by using a multi-probe
+          technic we can improve the results of estimation without having to
+          increase the number of hashing functions used, for example, the
+          difference of estimation error between the case of $256$ hashing
+          functions and $1024$ hashing functions is at the range of $0.003$.
+\end{itemize}
+
+

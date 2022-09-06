@@ -1,0 +1,34 @@
+\Acrfull{ann} is a reformulated version of the \Acrlong{nns} where the solution
+is found by the use of an index that gives a latent representation of the
+original data points, the intuition is to divide the data points into subsets
+(\gls{bucket}) of data points according to this new latent representation, and to
+select one subset do the search on it. The loss of information between the
+original data points and their latent representation makes the solution not
+guaranteed to be exact.
+
+The methods implementing the idea of \acrshort{ann} can be classified under four
+major families:
+\begin{itemize}
+      \item Hashing based algorithms: The idea behind this family of methods is
+            apply a set of hashing functions on the data points and to consider
+            their results as the new representation (in a lower dimensional space)
+            of their original points.
+      \item Quantization based algorithms: The idea is to decompose the space
+            into a Cartesian product of low dimensional subspaces and to quantize each
+            subspace separately. \citep{jegou_pqfnns_2011}
+      \item Tree based algorithms: The general idea is to form a tree where the
+            root node represents all the dataset, and to start splitting this data to
+            two halves by a hyper-plane orthogonal to a chosen dimension at a threshold
+            value. \citep{silpanan_2008}
+      \item Graph based algorithms: The idea is to represent the data as a graph
+            where the nodes are the data points, and an edge between two nodes
+            defines a neighbor-relationship between their respective points.
+            \citep{ann_mengzaho_2021}
+\end{itemize}
+
+Hashing based algorithms, Quantization based algorithms, Tree
+based algorithms, and Graph based algorithms.\citep{ann_mengzaho_2021}.
+
+In this present work we explore the hashing based algorithms, or \acrfull{lsh}
+in order to see how can they be suitable for the problem of detecting
+similarities between datasets.

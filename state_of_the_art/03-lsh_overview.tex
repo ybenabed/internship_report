@@ -1,0 +1,26 @@
+\section{Locality-Sensitive Hashing}
+
+\acrfull{lsh} is one of the methods that tackles the problem of the approximate
+nearest neighbor search, its main idea consists of using the hashing
+\footnote{It is the process of transforming an object into a relatively shorter
+    fixed-length value that we call key, and it is used to make the search operation
+    faster.} techniques to map the near data points to the same buckets \footnote{A
+    bucket is a group of elements that share the same hash value} with high
+probability, and map the distant ones to the same buckets with low probability.
+The intuition behind it is to apply a number of hashing functions on the data
+points to get their representations in a new latent space, and the goal with
+these hashing functions is to have nearby points in the original space close
+from each other in the latent space.
+
+
+\subsubsection{Locality-Sensitive hashing and Classical hashing}
+In classical hashing or hash-based search the idea is to load a set of elements
+in a hashing structure that has multiple entries and to have a hash function
+that maps every element from the set to one of the entries. The goal behind
+choice is to speed up the search process, which can be guaranteed by minimizing
+the collisions between the set elements.
+
+On the other hand, in \acrlong{lsh} the idea is to map data points to different
+\glspl{bucket} in a way that the nearby elements fall in the same buckets with high
+probability. Unlike classical hashing where the goal is to minimize collisions,
+in \acrshort{lsh} we look to maximize them.
