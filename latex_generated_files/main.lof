@@ -1,0 +1,23 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Basic example of \Acrlong {nns}\relax }}{3}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Locality-Sensitive Hash Family demonstration. Source: \href {https://randorithms.com/2019/09/19/Visual-LSH.html}{Blog in randorithms}\relax }}{6}{figure.caption.16}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Collision probability of LSH for the Jaccard metric\relax }}{7}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Hamming metric illustration\relax }}{8}{figure.caption.18}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Euclidean metric illustration\relax }}{9}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Angular metric illustration\relax }}{10}{figure.caption.20}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Angular metric estimation with LSH\relax }}{11}{figure.caption.21}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Collision probability of LSH for the angular metric\relax }}{11}{figure.caption.22}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Amplification step illustration: Division of the signature matrix\relax }}{13}{figure.caption.23}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Bucketing step example\relax }}{14}{figure.caption.24}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Minwise-Hashing LSH example\relax }}{15}{figure.caption.26}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Simhash LSH illustration\relax }}{16}{figure.caption.27}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Cross-Polytope LSH example\relax }}{18}{figure.caption.30}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Indexation process illustration\relax }}{22}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Class Diagram\relax }}{24}{figure.caption.41}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The organization of the project folders.\relax }}{27}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The architecture of the proof of concept\relax }}{28}{figure.caption.43}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Label matrix generation from the labelled column similarities\relax }}{30}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Embedding metric computing example\relax }}{31}{figure.caption.46}%

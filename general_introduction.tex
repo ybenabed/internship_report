@@ -1,4 +1,5 @@
 \chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 
 As data continues to grow, it is becoming increasingly critical for
 organizations to be able to easily manage and sort their datasets, whether they
@@ -26,10 +27,47 @@ a \Acrfull{nns} problem, we explore the state of the art with focusing on
 \Acrfull{lsh} methods and we study their different versions and the metric they
 consider.
 
-We also present the solution built during this internship, in which we use a
-method of the \acrshort{lsh} family called Cross-Polytope, our goal is to scale
-its idea that was initiated to work at row level and get it work at the column
-level.
+We present in the second place the solution built during this internship, in
+which we use a method of the \acrshort{lsh} family called Cross-Polytope, our
+goal is to scale its idea that was initiated to work at row level and get it
+work at the column level, we propose for this a set of preprocessing methods and
+modifications. We show with this solution the different tests and experiments we
+have done to get the suitable configuration and parameters that makes our
+solution return better results.
+
+We also show the steps of implementing the solution in the realization section,
+where we talk about the technologies and frameworks used, and also we present
+the architecture that we use to implement a proof of concept.
+
+\section*{Organization of the report}
+\addcontentsline{toc}{section}{Organization of the report}
+
+This report is organized in four chapters:
+
+\subsection*{Chapter 1: State of the art}
+In this chapter we define the \acrfull{nns} problem and its approximated
+version, then we present one of the methods that tackles it which is
+\acrfull{lsh} family and how to formulate it. We also talk about the metrics
+that are used generally in data science problems and their estimations with
+\acrshort{lsh}. We end this chapter by presenting the common steps between all
+\acrshort{lsh} methods and we present some of them.
+
+\subsection*{Chapter 2: Conception}
+This chapter presents the logic of our solution and its conception, we start it
+by presenting its two parts, the indexation and the similarity detection. And we
+end the section by presenting the class diagram.
+
+
+\subsection*{Chapter 3: Realization}
+In this chapter we describe the use case we considered to build the proof of
+concept, and then we present the tools and frameworks we used for the
+implementation, we present also the architecture considered for building the
+demonstration.
+
+\subsection*{Chapter 4: Experiments and results}
+The last chapter is about the experiments and tests completed to measure the
+accuracy of our solution and also to tune the hyper-parameters of the used
+\acrfull{lsh} method. 
 
 % Nearest neighbor search is a topic that occupied a lot of interest in the
 % machine learning search field as its exhaustive solutions require a lot of time

@@ -1,0 +1,40 @@
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+This internship period has been full and rich in terms of acquiring new
+experiences and skills. It was an experience that not only allowed me to learn
+more about the field of machine learning, but it was also an opportunity to
+develop on the organizational side, in terms of work methodology, quality of
+exchanges, requirements on deliverables and the importance of software
+engineering itself. 
+
+
+Through this report, I have exposed the work done in the project of my graduation
+internship which consisted in doing a state of the art and an implementation to
+address the need of having a tool able to detect the similarities between
+dataset based on their content with Cross-Polytope which is a \acrfull{lsh}
+method.
+
+I started this report with a definition on the \acrfull{nns} problem, how need
+it is to scale it to \acrfull{ann} and I exposed the metrics that it can use to
+measure the similarities or dissimilarities between data points. I continued by
+presenting \acrshort{lsh} family of methods as one of the methods that tackle
+\acrshort{nss}, I explained its global approach and finally presented their
+different methods related to each one of the previously mentioned metrics.
+
+My solution starts by initiating a set of preprocessing over the dataset, it
+first needs to get its columns separated into textual and non-textual column,
+embed the textual ones and get a sample from the second one. This solution is
+based on indexing the columns after preprocessing with Cross-Polytope LSH, a
+method that gives an estimation related to the angular distance. And to get the
+similarity measures with this solution, we need to get the buckets of each
+column with its indexes, and then compute the similarity between the indexes that share at least one bucket.
+
+
+\section*{Perspective}
+Despite the good results shown by this solution, there is still work to be done
+before it goes into production. This work will be mainly to see how to integrate
+it as a feature in Talend Data Inventory, and to get the first feedbacks from
+the users taking in consideration that they can have datasets in different forms
+and with so many types, something that couldn't be guaranteed with the benchmark
+we used for the tests.

@@ -1,0 +1,37 @@
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+The continuous growth of the data in the hands of the companies has always
+presented a real problem to manage it, a problem that has been tackled by Talend
+by developing and delivering its product
+\href{https://www.talend.com/products/data-inventory/}{Data Inventory} offering
+a set of functionalities to its clients. In order to increase the capabilities
+of this tool, the Talend Lab team proposes to work on a research project aiming
+to at extracting metadata from the data allowing to easily detect similarities
+between datasets. 
+
+It is in this context that the present project takes place, where we explore the
+literature related to dataset similarity detection and implement techniques to
+efficiently extract metadata from any new dataset. We built during this project
+a proof of concept that provides the user with the possibility to introduce and
+index a new dataset, and to compute efficiently for a selected dataset, the
+degree of similarity with the other dataset in the system. We scaled the
+similarity detection from the level of datasets to the level of their columns
+and we used the latter to deduce a score for the first.
+
+This type of functionality can be used in different ways, we can use it suggest
+to the user to compare and merge two similar datasets, or to update the records
+of one of them. We can also use it to detect the topic of the dataset if the
+ones similar to it have already been tagged with their respective topics.
+
+To build our solution, we tackle this topic as \acrfull{nns} problem, and we use
+a method from the \acrfull{lsh} family which is Cross-Polytope LSH and we
+combine it with Multi-Probe LSH to improve its indexation quality. This solution
+has been tested on a benchmark that has been used in an internal project at
+Talend, and it shows up that our solution achieves an accuracy of 60\% when it
+comes to reproduce human-labelled similarities.
+
+\vspace{2cm}
+\textbf{Keywords:}
+\acrlong{nns}, \acrlong{lsh}, Cross-Polytope, Data Fingerprinting, Indexation,
+Similarity \& Dissimilarity Metrics

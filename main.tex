@@ -21,7 +21,7 @@
 
 \usepackage{hyperref}
 
-
+\usepackage[final]{pdfpages}
 \usepackage{caption}
 \graphicspath{ {figures/}}
 
@@ -37,8 +37,17 @@
 \makenoidxglossaries
 
 \begin{document}
+\includepdf[pages=-]{page_de_garde.pdf}
 \pagenumbering{roman}
-% \printnoidxglossaries
+\include{acknowledgement}
+\include{abstract}
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listofalgorithms
+\clearpage
+\printnoidxglossary[nonumberlist]
 
 \clearpage
 \pagenumbering{arabic}
