@@ -32,9 +32,9 @@ dataset), with changing the embedding model and the embedding approach.
 \end{multicols}
 
 To compute this accuracy, we represent the estimated similarities between couples
-of datasets in a form of a matrix where each axis represent dataset columns. The
+of datasets in a form of a matrix where each axis represents a dataset column. The
 next step is to compute for each dataset couple the accuracy of the estimated
-similarities between the columns that has been labelled similar.
+similarities between the columns that have been labelled similar.
 
 To define this metric mathematically, let $E$ be the estimation matrix, and  $L$
 be the labelled similarity matrix, and $1_L$ the number of occurrences of 1 in $L$
@@ -97,7 +97,7 @@ with every combination of embedding model with an embedding approach.
     \caption{Results for the embedding choice metric}
     \label{table:embedding_metric_result}
 \end{table}
-Some remarks can be done over this results:
+Some remarks can be done over these results:
 \begin{itemize}
     \item The best accuracies were around $0.56, 0.58$.
     \item The fourth approach gave the best results for each embedding model.
@@ -105,7 +105,7 @@ Some remarks can be done over this results:
           too big case of approach 2 (Concatenate embeddings). As each cell with
           this approach will be in a dimension of 512 or 368 (depending on the
           embedding model used), the vector of concatenated word representations
-          will become too large, which will make the angular metric loses some
+          will become too large, which will make the angular metric lose some
           relevance, and also the concatenation of the embeddings won't give a
           good comprehension of the column content.
     \item The accuracies depend on the embedding model understanding of

@@ -1,6 +1,6 @@
 \subsection{Indexation hyper-parameters}
-In this second test the goal is to find the best combination of number of the
-hashing functions to use in indexation and the number of probes to use in
+In this second test the goal is to find the best combination of the
+hashing functions number to use in indexation and the number of probes to use in
 Multi-Probe LSH. The best combination is the one that gives the index with the
 minimum error of estimation of the angular distance. To do this, a list of
 values for each of the two variables and a set of 1000 dataset couples have been
@@ -89,9 +89,9 @@ The table \ref{table:multiprobe_hyperparameters} shows the results of this
 experiment, from which we can take the following points:
 \begin{itemize}
     \item The best configurations gave errors in the interval of $[0.45, 0.55]$.
-    \item The results confirms the theoretical result in
+    \item The results confirm the theoretical result in
           \citep{andoni_practicalsh_2015} saying that by using a multi-probe
-          technic we can improve the results of estimation without having to
+          technique we can improve the results of estimation without having to
           increase the number of hashing functions used, for example, the
           difference of estimation error between the case of $256$ hashing
           functions and $1024$ hashing functions is at the range of $0.003$.

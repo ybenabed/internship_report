@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  7 SEP 2022 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  7 SEP 2022 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -624,7 +624,7 @@ Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 \l__pdf_internal_box=\box118
-) (latex_generated_files/main.aux (latex_generated_files/acknowledgement.aux) (latex_generated_files/abstract.aux) (latex_generated_files/general_introduction.aux) (latex_generated_files/state_of_the_art.aux) (latex_generated_files/conception.aux) (latex_generated_files/realization.aux) (latex_generated_files/tests.aux))
+) (latex_generated_files/main.aux (latex_generated_files/acknowledgement.aux) (latex_generated_files/abstract.aux) (latex_generated_files/general_introduction.aux) (latex_generated_files/state_of_the_art.aux) (latex_generated_files/conception.aux) (latex_generated_files/realization.aux) (latex_generated_files/tests.aux) (latex_generated_files/conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -722,7 +722,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-<page_de_garde.pdf, id=160, 597.51233pt x 845.0471pt>
+<page_de_garde.pdf, id=164, 597.51233pt x 845.0471pt>
 File: page_de_garde.pdf Graphic file (type pdf)
 <use page_de_garde.pdf>
 Package pdftex.def Info: page_de_garde.pdf  used on input line 40.
@@ -731,7 +731,7 @@ File: page_de_garde.pdf Graphic file (type pdf)
 <use page_de_garde.pdf>
 Package pdftex.def Info: page_de_garde.pdf  used on input line 40.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<page_de_garde.pdf, id=163, page=1, 597.51233pt x 845.0471pt>
+<page_de_garde.pdf, id=167, page=1, 597.51233pt x 845.0471pt>
 File: page_de_garde.pdf Graphic file (type pdf)
 <use page_de_garde.pdf, page 1>
 Package pdftex.def Info: page_de_garde.pdf , page1 used on input line 40.
@@ -815,24 +815,24 @@ l.54
 
 
 
-]) [2]
+]) [2] [3]
 \openout2 = `state_of_the_art.aux'.
 
  (./state_of_the_art.tex
 Chapter 1.
 (./state_of_the_art/01-nss_problem.tex
-<figures//state_of_the_art/nss.jpg, id=356, 569.12625pt x 209.78375pt>
+<figures//state_of_the_art/nss.jpg, id=373, 569.12625pt x 209.78375pt>
 File: figures//state_of_the_art/nss.jpg Graphic file (type jpg)
 <use figures//state_of_the_art/nss.jpg>
 Package pdftex.def Info: figures//state_of_the_art/nss.jpg  used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 167.8144pt.
-) [3
+) [4
 
 
 
 
- <./figures//state_of_the_art/nss.jpg>] (./state_of_the_art/02-ann_problem.tex) (./state_of_the_art/03-lsh_overview.tex [4]) (./state_of_the_art/05-lsh_formulation.tex
-<figures//state_of_the_art/r-cr conditions.png, id=410, 443.7378pt x 231.264pt>
+ <./figures//state_of_the_art/nss.jpg>] (./state_of_the_art/02-ann_problem.tex) (./state_of_the_art/03-lsh_overview.tex [5]) (./state_of_the_art/05-lsh_formulation.tex
+<figures//state_of_the_art/r-cr conditions.png, id=428, 443.7378pt x 231.264pt>
 File: figures//state_of_the_art/r-cr conditions.png Graphic file (type png)
 <use figures//state_of_the_art/r-cr conditions.png>
 Package pdftex.def Info: figures//state_of_the_art/r-cr conditions.png  used on input line 37.
@@ -841,8 +841,8 @@ Package pdftex.def Info: figures//state_of_the_art/r-cr conditions.png  used on 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [5] [6 <./figures//state_of_the_art/r-cr conditions.png>] (./state_of_the_art/06-metrics.tex
-<figures//state_of_the_art/metrics/jaccard-dist.png, id=432, 282.05376pt x 283.0575pt>
+) [6] [7 <./figures//state_of_the_art/r-cr conditions.png>] (./state_of_the_art/06-metrics.tex
+<figures//state_of_the_art/metrics/jaccard-dist.png, id=450, 282.05376pt x 283.0575pt>
 File: figures//state_of_the_art/metrics/jaccard-dist.png Graphic file (type png)
 <use figures//state_of_the_art/metrics/jaccard-dist.png>
 Package pdftex.def Info: figures//state_of_the_art/metrics/jaccard-dist.png  used on input line 17.
@@ -852,27 +852,27 @@ Overfull \hbox (1.10098pt too wide) in paragraph at lines 22--26
 []\OT1/cmr/m/n/12 To get an es-ti-ma-tion of the Jac-card met-ric us-ing LSH is de-fined as: $\OML/cmm/m/it/12 H\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 min\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ))$.
  []
 
-[7
+[8
 
  <./figures//state_of_the_art/metrics/jaccard-dist.png>]
-<figures//state_of_the_art/metrics/hamming-dist.png, id=441, 283.0575pt x 282.05376pt>
+<figures//state_of_the_art/metrics/hamming-dist.png, id=459, 283.0575pt x 282.05376pt>
 File: figures//state_of_the_art/metrics/hamming-dist.png Graphic file (type png)
 <use figures//state_of_the_art/metrics/hamming-dist.png>
 Package pdftex.def Info: figures//state_of_the_art/metrics/hamming-dist.png  used on input line 55.
 (pdftex.def)             Requested size: 283.0568pt x 282.05305pt.
- [8 <./figures//state_of_the_art/metrics/hamming-dist.png>]
-<figures//state_of_the_art/metrics/euclidean-dist.png, id=448, 282.05376pt x 282.05376pt>
+ [9 <./figures//state_of_the_art/metrics/hamming-dist.png>]
+<figures//state_of_the_art/metrics/euclidean-dist.png, id=465, 282.05376pt x 282.05376pt>
 File: figures//state_of_the_art/metrics/euclidean-dist.png Graphic file (type png)
 <use figures//state_of_the_art/metrics/euclidean-dist.png>
 Package pdftex.def Info: figures//state_of_the_art/metrics/euclidean-dist.png  used on input line 87.
 (pdftex.def)             Requested size: 282.05305pt x 282.05305pt.
- [9 <./figures//state_of_the_art/metrics/euclidean-dist.png>]
-<figures//state_of_the_art/metrics/angular-dist.png, id=464, 287.0725pt x 285.065pt>
+ [10 <./figures//state_of_the_art/metrics/euclidean-dist.png>]
+<figures//state_of_the_art/metrics/angular-dist.png, id=481, 287.0725pt x 285.065pt>
 File: figures//state_of_the_art/metrics/angular-dist.png Graphic file (type png)
 <use figures//state_of_the_art/metrics/angular-dist.png>
 Package pdftex.def Info: figures//state_of_the_art/metrics/angular-dist.png  used on input line 131.
 (pdftex.def)             Requested size: 183.37534pt x 182.09486pt.
-<figures//state_of_the_art/metrics/angular-project.png, id=469, 697.4055pt x 706.0779pt>
+<figures//state_of_the_art/metrics/angular-project.png, id=486, 697.4055pt x 706.0779pt>
 File: figures//state_of_the_art/metrics/angular-project.png Graphic file (type png)
 <use figures//state_of_the_art/metrics/angular-project.png>
 Package pdftex.def Info: figures//state_of_the_art/metrics/angular-project.png  used on input line 160.
@@ -881,7 +881,7 @@ Package pdftex.def Info: figures//state_of_the_art/metrics/angular-project.png  
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures//state_of_the_art/metrics/angular-collision.png, id=470, 1001.6622pt x 809.424pt>
+<figures//state_of_the_art/metrics/angular-collision.png, id=487, 1001.6622pt x 809.424pt>
 File: figures//state_of_the_art/metrics/angular-collision.png Graphic file (type png)
 <use figures//state_of_the_art/metrics/angular-collision.png>
 Package pdftex.def Info: figures//state_of_the_art/metrics/angular-collision.png  used on input line 172.
@@ -889,8 +889,8 @@ Package pdftex.def Info: figures//state_of_the_art/metrics/angular-collision.png
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [10 <./figures//state_of_the_art/metrics/angular-dist.png>] [11 <./figures//state_of_the_art/metrics/angular-project.png> <./figures//state_of_the_art/metrics/angular-collision.png>] (./state_of_the_art/07-lsh_steps.tex
-<figures//state_of_the_art/steps/amplification_step.png, id=486, 403.5075pt x 220.4235pt>
+) [11 <./figures//state_of_the_art/metrics/angular-dist.png>] [12 <./figures//state_of_the_art/metrics/angular-project.png> <./figures//state_of_the_art/metrics/angular-collision.png>] (./state_of_the_art/07-lsh_steps.tex
+<figures//state_of_the_art/steps/amplification_step.png, id=503, 403.5075pt x 220.4235pt>
 File: figures//state_of_the_art/steps/amplification_step.png Graphic file (type png)
 <use figures//state_of_the_art/steps/amplification_step.png>
 Package pdftex.def Info: figures//state_of_the_art/steps/amplification_step.png  used on input line 37.
@@ -899,7 +899,7 @@ Package pdftex.def Info: figures//state_of_the_art/steps/amplification_step.png 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures//state_of_the_art/steps/bucketing_step.png, id=488, 362.85562pt x 222.8325pt>
+<figures//state_of_the_art/steps/bucketing_step.png, id=505, 362.85562pt x 222.8325pt>
 File: figures//state_of_the_art/steps/bucketing_step.png Graphic file (type png)
 <use figures//state_of_the_art/steps/bucketing_step.png>
 Package pdftex.def Info: figures//state_of_the_art/steps/bucketing_step.png  used on input line 61.
@@ -907,58 +907,58 @@ Package pdftex.def Info: figures//state_of_the_art/steps/bucketing_step.png  use
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [12
+) [13
 
-] [13 <./figures//state_of_the_art/steps/amplification_step.png>] [14 <./figures//state_of_the_art/steps/bucketing_step.png>] (./state_of_the_art/08-lsh_methods.tex (./state_of_the_art/081-minhash_lsh.tex
+] [14 <./figures//state_of_the_art/steps/amplification_step.png>] [15 <./figures//state_of_the_art/steps/bucketing_step.png>] (./state_of_the_art/08-lsh_methods.tex (./state_of_the_art/081-minhash_lsh.tex
 Overfull \hbox (24.1649pt too wide) in paragraph at lines 13--26
 \OT1/cmr/m/n/12 gen-er-ated hash-ing func-tions $(\OML/cmm/m/it/12 h[]; h[]; ::; h[]\OT1/cmr/m/n/12 )$ on a col-umn: $\OML/cmm/m/it/12 h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 min\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^A\OML/cmm/m/it/12 ; h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X\OT1/cmr/m/n/12 ))$
  []
 
-<figures//state_of_the_art/methods/minhash_example.png, id=510, 853.68938pt x 315.27788pt>
+<figures//state_of_the_art/methods/minhash_example.png, id=527, 853.68938pt x 315.27788pt>
 File: figures//state_of_the_art/methods/minhash_example.png Graphic file (type png)
 <use figures//state_of_the_art/methods/minhash_example.png>
 Package pdftex.def Info: figures//state_of_the_art/methods/minhash_example.png  used on input line 29.
 (pdftex.def)             Requested size: 455.24411pt x 168.13078pt.
-) [15
+) [16
 
  <./figures//state_of_the_art/methods/minhash_example.png>] (./state_of_the_art/082-simhash_lsh.tex
-<figures//state_of_the_art/methods/simhash_lines.png, id=523, 480.79625pt x 272.01625pt>
+<figures//state_of_the_art/methods/simhash_lines.png, id=540, 480.79625pt x 272.01625pt>
 File: figures//state_of_the_art/methods/simhash_lines.png Graphic file (type png)
 <use figures//state_of_the_art/methods/simhash_lines.png>
 Package pdftex.def Info: figures//state_of_the_art/methods/simhash_lines.png  used on input line 10.
 (pdftex.def)             Requested size: 318.67638pt x 196.78958pt.
- [16 <./figures//state_of_the_art/methods/simhash_lines.png>]) (./state_of_the_art/083-crosspolyope_lsh.tex
-<figures//state_of_the_art/methods/cross-polyope.png, id=543, 585.68813pt x 576.65437pt>
+ [17 <./figures//state_of_the_art/methods/simhash_lines.png>]) (./state_of_the_art/083-crosspolyope_lsh.tex
+<figures//state_of_the_art/methods/cross-polyope.png, id=561, 585.68813pt x 576.65437pt>
 File: figures//state_of_the_art/methods/cross-polyope.png Graphic file (type png)
 <use figures//state_of_the_art/methods/cross-polyope.png>
 Package pdftex.def Info: figures//state_of_the_art/methods/cross-polyope.png  used on input line 15.
 (pdftex.def)             Requested size: 455.26201pt x 281.12007pt.
- [17]))) [18 <./figures//state_of_the_art/methods/cross-polyope.png>] [19]
+ [18]))) [19 <./figures//state_of_the_art/methods/cross-polyope.png>] [20]
 \openout2 = `conception.aux'.
 
  (./conception.tex
 Chapter 2.
 
-LaTeX Warning: Reference `sect:possible_metrics' on page 20 undefined on input line 5.
+LaTeX Warning: Reference `sect:possible_metrics' on page 21 undefined on input line 5.
 
 
 Overfull \hbox (43.87047pt too wide) in paragraph at lines 33--36
 \OT1/cmr/m/n/12 2, for this we'll set this size on a value be-tween 128 to 2048, and we'll call it []. 
  []
 
-[20
+[21
 
 
 
 
-] [21]
-<figures//conception/indexing-whitebg.png, id=592, 1156.32pt x 424.58624pt>
+] [22]
+<figures//conception/indexing-whitebg.png, id=609, 1156.32pt x 424.58624pt>
 File: figures//conception/indexing-whitebg.png Graphic file (type png)
 <use figures//conception/indexing-whitebg.png>
 Package pdftex.def Info: figures//conception/indexing-whitebg.png  used on input line 106.
 (pdftex.def)             Requested size: 455.24411pt x 167.15579pt.
- [22 <./figures//conception/indexing-whitebg.png>]
-<figures//conception/class-diagram.png, id=599, 1183.42125pt x 668.4975pt>
+ [23 <./figures//conception/indexing-whitebg.png>]
+<figures//conception/class-diagram.png, id=617, 1183.42125pt x 668.4975pt>
 File: figures//conception/class-diagram.png Graphic file (type png)
 <use figures//conception/class-diagram.png>
 Package pdftex.def Info: figures//conception/class-diagram.png  used on input line 179.
@@ -967,18 +967,18 @@ Package pdftex.def Info: figures//conception/class-diagram.png  used on input li
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [23] [24 <./figures//conception/class-diagram.png>]
+) [24] [25 <./figures//conception/class-diagram.png>]
 \openout2 = `realization.aux'.
 
  (./realization.tex
 Chapter 3.
-[25
+[26
 
 
 
 
-] [26]
-<figures//realization/application.png, id=630, 196.735pt x 207.77625pt>
+] [27]
+<figures//realization/application.png, id=647, 196.735pt x 207.77625pt>
 File: figures//realization/application.png Graphic file (type png)
 <use figures//realization/application.png>
 Package pdftex.def Info: figures//realization/application.png  used on input line 122.
@@ -988,7 +988,7 @@ Overfull \hbox (14.63963pt too wide) in paragraph at lines 122--123
  [][] 
  []
 
-<figures//realization/logic.png, id=631, 195.73125pt x 203.76125pt>
+<figures//realization/logic.png, id=648, 195.73125pt x 203.76125pt>
 File: figures//realization/logic.png Graphic file (type png)
 <use figures//realization/logic.png>
 Package pdftex.def Info: figures//realization/logic.png  used on input line 126.
@@ -998,7 +998,7 @@ Overfull \hbox (13.6359pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
-<figures//realization/presentation.png, id=632, 196.735pt x 182.6825pt>
+<figures//realization/presentation.png, id=649, 196.735pt x 182.6825pt>
 File: figures//realization/presentation.png Graphic file (type png)
 <use figures//realization/presentation.png>
 Package pdftex.def Info: figures//realization/presentation.png  used on input line 130.
@@ -1013,18 +1013,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--132
 []$[]$ $[]$
  []
 
-[27 <./figures//realization/application.png> <./figures//realization/logic.png> <./figures//realization/presentation.png>]
-<figures//realization/architecture.png, id=642, 595.77582pt x 604.80956pt>
+[28 <./figures//realization/application.png> <./figures//realization/logic.png> <./figures//realization/presentation.png>]
+<figures//realization/architecture.png, id=659, 595.77582pt x 604.80956pt>
 File: figures//realization/architecture.png Graphic file (type png)
 <use figures//realization/architecture.png>
 Package pdftex.def Info: figures//realization/architecture.png  used on input line 150.
 (pdftex.def)             Requested size: 455.24411pt x 462.161pt.
-) [28 <./figures//realization/architecture.png>]
+) [29 <./figures//realization/architecture.png>]
 \openout2 = `tests.aux'.
 
  (./tests.tex
 Chapter 4.
-<figures//tests/labelled_entry.png, id=650, 794.97pt x 261.97874pt>
+<figures//tests/labelled_entry.png, id=668, 794.97pt x 261.97874pt>
 File: figures//tests/labelled_entry.png Graphic file (type png)
 <use figures//tests/labelled_entry.png>
 Package pdftex.def Info: figures//tests/labelled_entry.png  used on input line 67.
@@ -1032,7 +1032,7 @@ Package pdftex.def Info: figures//tests/labelled_entry.png  used on input line 6
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./tests/01-embedding_metric.tex [29
+(./tests/01-embedding_metric.tex [30
 
 
 
@@ -1042,7 +1042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 [][]\OT1/cmr/m/n/12 Neural-Net Lan-guage Mod-els[]
  []
 
-<figures//tests/embedding_metric.png, id=666, 599.38931pt x 210.93806pt>
+<figures//tests/embedding_metric.png, id=683, 599.38931pt x 210.93806pt>
 File: figures//tests/embedding_metric.png Graphic file (type png)
 <use figures//tests/embedding_metric.png>
 Package pdftex.def Info: figures//tests/embedding_metric.png  used on input line 51.
@@ -1050,12 +1050,12 @@ Package pdftex.def Info: figures//tests/embedding_metric.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30 <./figures//tests/labelled_entry.png>]
+[31 <./figures//tests/labelled_entry.png>]
 Overfull \hbox (30.38663pt too wide) in paragraph at lines 69--96
  [] 
  []
 
-[31 <./figures//tests/embedding_metric.png>]) (./tests/02-index_hp.tex
+[32 <./figures//tests/embedding_metric.png>]) (./tests/02-index_hp.tex
 Overfull \hbox (3.7853pt too wide) in paragraph at lines 52--81
  [] 
  []
@@ -1063,30 +1063,38 @@ Overfull \hbox (3.7853pt too wide) in paragraph at lines 52--81
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) [32] [33] (latex_generated_files/main.bbl [34
+)) [33] [34]
+\openout2 = `conclusion.aux'.
+
+ (./conclusion.tex) [35
 
 
 
-]) [35] (latex_generated_files/main.aux (latex_generated_files/acknowledgement.aux) (latex_generated_files/abstract.aux) (latex_generated_files/general_introduction.aux) (latex_generated_files/state_of_the_art.aux) (latex_generated_files/conception.aux) (latex_generated_files/realization.aux) (latex_generated_files/tests.aux))
+
+] (latex_generated_files/main.bbl [36
+
+
+
+]) [37] (latex_generated_files/main.aux (latex_generated_files/acknowledgement.aux) (latex_generated_files/abstract.aux) (latex_generated_files/general_introduction.aux) (latex_generated_files/state_of_the_art.aux) (latex_generated_files/conception.aux) (latex_generated_files/realization.aux) (latex_generated_files/tests.aux) (latex_generated_files/conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1CD7983E9613D47CE7695FB62E6B8E0D;5475.
+(rerunfilecheck)             Checksum: B11ED8F24749DB9FCC6D89A1C317E385;5571.
  ) 
 Here is how much of TeX's memory you used:
- 20212 strings out of 478287
- 337622 string characters out of 5849290
- 685224 words of memory out of 5000000
- 37761 multiletter control sequences out of 15000+600000
+ 20250 strings out of 478287
+ 338599 string characters out of 5849290
+ 686031 words of memory out of 5000000
+ 37783 multiletter control sequences out of 15000+600000
  478889 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,17n,91p,1177b,659s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on latex_generated_files/main.pdf (43 pages, 1483337 bytes).
+Output written on latex_generated_files/main.pdf (45 pages, 1487652 bytes).
 PDF statistics:
- 835 PDF objects out of 1000 (max. 8388607)
- 692 compressed objects within 7 object streams
- 178 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 869 PDF objects out of 1000 (max. 8388607)
+ 723 compressed objects within 8 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
