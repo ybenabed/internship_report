@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  7 SEP 2022 19:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  7 SEP 2022 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1014,11 +1014,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--132
  []
 
 [28 <./figures//realization/application.png> <./figures//realization/logic.png> <./figures//realization/presentation.png>]
-<figures//realization/architecture.png, id=659, 595.77582pt x 604.80956pt>
+<figures//realization/architecture.png, id=659, 730.83037pt x 395.67825pt>
 File: figures//realization/architecture.png Graphic file (type png)
 <use figures//realization/architecture.png>
 Package pdftex.def Info: figures//realization/architecture.png  used on input line 150.
-(pdftex.def)             Requested size: 455.24411pt x 462.161pt.
+(pdftex.def)             Requested size: 455.24411pt x 246.47719pt.
 ) [29 <./figures//realization/architecture.png>]
 \openout2 = `tests.aux'.
 
@@ -1091,7 +1091,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  91i,17n,91p,1177b,659s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on latex_generated_files/main.pdf (45 pages, 1487621 bytes).
+Output written on latex_generated_files/main.pdf (45 pages, 1491161 bytes).
 PDF statistics:
  869 PDF objects out of 1000 (max. 8388607)
  723 compressed objects within 8 object streams
