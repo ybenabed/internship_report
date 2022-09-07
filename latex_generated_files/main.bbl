@@ -1,7 +1,8 @@
 \begin{thebibliography}{}
 
-\bibitem[Andoni et~al., 2015]{andoni_practicalsh_2015}
-Andoni, A., Indyk, P., Laarhoven, T., Razenshteyn, I., and Schmidt, L. (2015).
-\newblock Practical and optimal lsh for angular distance.
+\bibitem[Google, 2022]{jax_2022}
+Google (2022).
+\newblock Jax.
+\newblock \url{https://github.com/google/jax}.
 
 \end{thebibliography}
