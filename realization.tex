@@ -39,30 +39,66 @@ Python have been chosen for implementing this project for the following reasons:
     \item The Lab team of Talend has already used Python in most of their
     projects, this makes it easier to understand, collaborate, scale and
     integrate our solution in the future.
-    \item 
 \end{itemize}
 
 We follow up by presenting some of the used libraries during this projet:
 
-\subsubsection{Numpy}
+\begin{enumerate}
+    \item \textbf{Numpy}:
 A library used to manipulate matrices, multidimensional arrays, vectors and
 polynomials, it has a large number of mathematical functions that can be applied
 directly to the structures mentioned above. In this project we have used numpy
 to process matrices and arrays.
-
-\subsubsection{Jax}
+    
+    \item \textbf{Jax}:
 Following its definition in its official repository \citep{jax_2022}, Google JAX
 is a machine learning framework for transforming numerical functions, the goal
 of using this framework is to take advantage from its version of Numpy that
-provides us with the possibility of doing the different calculations on GPU.
+provides us with the possibility of doing the different calculations on GPU. It
+shows up that this choice is accurate if we take in consideration the number of
+matrix multiplication that we have to do in Cross-Polytope.
 
-\subsubsection{Pandas}
+    \item \textbf{Pandas}:
+Pandas is a python library that allows to easily manipulate data in form of data
+tables that we call DataFrame with column and row labels. It provides us with
+some interesting easily used features to read, analyze and complete some
+preprocessing operations.
 
-\subsubsection{Matplotlib}
+    \item \textbf{IGraph}:
+It is a library allowing to define and manipulate graphs, it is written in C
+programming language and can be used with Python or R. We use it in our solution
+to define the graphs representing the results of similarities between columns
+and between datasets
 
-\subsubsection{IGraph}
+    \item \textbf{Plotly}:
+Plotly is a complete library for creating static, animated and interactive
+visualizations in Python. It is used in our solution to represent the graphs
+defined with IGraph with an interactive figures in the streamlit application.
 
-\subsubsection{Plotly}
+    \item \textbf{Transformers}:
+We use the Transformers library which is a state of the art pre-trained model
+library for natural language processing (NLP). The library currently contains
+pre-trained model weights, user scripts and conversion utilities: Bert,
+Roberta...
+
+\end{enumerate}
 
 
+\subsection{Streamlit}
+It is an open source framework in Python language dedicated for data scientist
+and machine learning engineers to create complete web applications in a short
+time as it provides a set of components that we need to have an interactive
+layout. It also provides a compatibility with different Python libraries which
+make it easier for building demonstrations that are not exclusive to data
+scientists.
 
+Stramlit has also a cloud platform that gives its users the possiblity to
+deploy, manage and share their apps.
+
+\subsection{TensorFlow Hub}
+It is a repository of trained machine learning models ready for downloading,
+fine-tuning or reusing in different projects, with the possiblity to be deployed
+everywhere.
+
+We used this library to test different embedding models and choose the most
+suitable one in order to get a representation for the textual columns.
