@@ -1,8 +1,87 @@
 \begin{thebibliography}{}
 
+\bibitem[Andoni et~al., 2015]{andoni_practicalsh_2015}
+Andoni, A., Indyk, P., Laarhoven, T., Razenshteyn, I., and Schmidt, L. (2015).
+\newblock Practical and optimal lsh for angular distance.
+
+\bibitem[Chi and Zhu, 2017]{chi_zhu_2017}
+Chi, L. and Zhu, X. (2017).
+\newblock Hashing techniques: A survey and taxonomy.
+\newblock {\em ACM Comput. Surv.}
+
+\bibitem[Domingos, 2012]{domingos_few_2012}
+Domingos, P. (2012).
+\newblock A few useful things to know about machine learning.
+\newblock {\em Commun. {ACM}}, 55(10):78--87.
+
+\bibitem[Ertl, 2020]{ertl_2020}
+Ertl, O. (2020).
+\newblock {ProbMinHash} {\textendash} a class of locality-sensitive hash
+  algorithms for the (probability) jaccard similarity.
+\newblock {\em {IEEE} Transactions on Knowledge and Data Engineering}, pages
+  1--1.
+
 \bibitem[Google, 2022]{jax_2022}
 Google (2022).
 \newblock Jax.
 \newblock \url{https://github.com/google/jax}.
+
+\bibitem[Hajebi et~al., 2011]{fast_ann_hajebi_2011}
+Hajebi, K., Abbasi-Yadkori, Y., Shahbazi, H., and Zhang, H. (2011).
+\newblock Fast approximate nearest-neighbor search with k-nearest neighbor
+  graph.
+\newblock pages 1312--1317.
+
+\bibitem[Indyk and Motwani, 2000]{indyk_2000}
+Indyk, P. and Motwani, R. (2000).
+\newblock Approximate nearest neighbors: Towards removing the curse of
+  dimensionality.
+\newblock {\em Conference Proceedings of the Annual ACM Symposium on Theory of
+  Computing}, 604-613.
+
+\bibitem[Jafari et~al., 2021]{jafari_lsh_2017}
+Jafari, O., Maurya, P., Nagarkar, P., Islam, K., and Crushev, C. (2021).
+\newblock A survey on locality sensitive hashing algorithms and their
+  applications.
+
+\bibitem[Jégou et~al., 2011]{jegou_pqfnns_2011}
+Jégou, H., Douze, M., and Schmid, C. (2011).
+\newblock Product quantization for nearest neighbor search.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  33:117--28.
+
+\bibitem[OpenGenus-Foundation and Aditya, 2018]{manhattan_2018}
+OpenGenus-Foundation and Aditya, C. (2018).
+\newblock Manhattan distance.
+
+\bibitem[OpenGenus-Foundation and Aditya, 2019]{minkowski_2019}
+OpenGenus-Foundation and Aditya, C. (2019).
+\newblock Minkowski distance [explained].
+
+\bibitem[Research and Ads, 2020]{google_floc_2020}
+Research, G. and Ads (2020).
+\newblock Evaluation of cohort algorithms for the floc api.
+
+\bibitem[Silpa-Anan and Hartley, 2008]{silpanan_2008}
+Silpa-Anan, C. and Hartley, R. (2008).
+\newblock Optimised kd-trees for fast image descriptor matching.
+\newblock In {\em 2008 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 1--8.
+
+\bibitem[Wang et~al., 2021]{ann_mengzaho_2021}
+Wang, M., Xu, X., Yue, Q., and Wang, Y. (2021).
+\newblock A comprehensive survey and experimental comparison of graph-based
+  approximate nearest neighbor search.
+\newblock {\em CoRR}, abs/2101.12631.
+
+\bibitem[Yu and Weber, 2022]{yu_yun_2022}
+Yu, Y.~W. and Weber, G.~M. (2022).
+\newblock Hyperminhash: Minhash in loglog space.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  34(1):328--339.
+
+\bibitem[Zhu et~al., 2016]{zhu_lshensemble_2016}
+Zhu, E., Nargesian, F., Pu, K.~Q., and Miller, R.~J. (2016).
+\newblock Lsh ensemble: Internet-scale domain search.
 
 \end{thebibliography}

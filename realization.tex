@@ -41,7 +41,7 @@ Python have been chosen for implementing this project for the following reasons:
     integrate our solution in the future.
 \end{itemize}
 
-We follow up by presenting some of the used libraries during this projet:
+We follow up by presenting some of the used libraries during this project:
 
 \begin{enumerate}
     \item \textbf{Numpy}:
@@ -79,7 +79,7 @@ defined with IGraph with an interactive figures in the streamlit application.
 We use the Transformers library which is a state of the art pre-trained model
 library for natural language processing (NLP). The library currently contains
 pre-trained model weights, user scripts and conversion utilities: Bert,
-Roberta...
+Roberta\ldots.
 
 \end{enumerate}
 
@@ -92,13 +92,62 @@ layout. It also provides a compatibility with different Python libraries which
 make it easier for building demonstrations that are not exclusive to data
 scientists.
 
-Stramlit has also a cloud platform that gives its users the possiblity to
+Streamlit has also a cloud platform that gives its users the possibility to
 deploy, manage and share their apps.
 
 \subsection{TensorFlow Hub}
 It is a repository of trained machine learning models ready for downloading,
-fine-tuning or reusing in different projects, with the possiblity to be deployed
+fine-tuning or reusing in different projects, with the possibility to be deployed
 everywhere.
 
 We used this library to test different embedding models and choose the most
 suitable one in order to get a representation for the textual columns.
+
+
+\section{Architecture}
+The proof of concept has been implemented using two layers, the logic layer
+which is responsible of providing the features of indexation, storing, querying
+and similarity representation, while the second layer, the presentation layer,
+is responsible of building the user interface that offer the user the
+possibility to add and index a new dataset, display the stored indexes, look up
+for similarities and getting their representations.
+
+The figure \ref{fig:folder_organization} shows the organization of the project
+folder where $data\_fingerprinting$ represents the logic layer, and
+$visual\_demo$ represents the presentation layer.
+
+\begin{figure}[h]
+    \begin{subfigure}{.4\textwidth}
+        \centering
+        \includegraphics{realization/application.png}
+    \end{subfigure}
+    \begin{subfigure}{.4\textwidth}
+        \centering
+        \includegraphics{realization/logic.png}
+    \end{subfigure}
+    \begin{subfigure}{.4\textwidth}
+        \centering
+        \includegraphics{realization/presentation.png}
+    \end{subfigure}
+    \caption{The organization of the project folders.}
+    \label{fig:folder_organization}
+\end{figure}
+
+The logic layer contains the five components introduction in the class diagram
+in section \ref{sect:concep_implementation} which are: Preprocessing, Hashing,
+Query, Plotting, and Storing. We use SQLite database for storing and reading the
+indexes, it mainly interacts with the Storing component. The presentation layer
+is divided into two components, the view component to build the user interface
+which is a multi-page layout, and the controller component which provides all
+the interactions between the view component and the logic layer.
+
+The figure \ref{fig:architecture} shows architecture of the proof of concept
+built to demonstrate the functioning of the similarity detection process with
+LSH.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{realization/architecture.png}
+    \caption{The architecture of the proof of concept}
+    \label{fig:architecture}
+\end{figure}

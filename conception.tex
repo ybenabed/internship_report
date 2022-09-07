@@ -124,7 +124,7 @@ following attributes:
 
 
 \section{Similarity Detection}
-This second part of our solution is meant to proceed for the similiarity
+This second part of our solution is meant to proceed for the similarity
 detection between two dataset indexes. As described previously, we scale the
 similarity detection between dataset to the similarity detection between their
 columns, and from the column similarities we can give a score representing the
@@ -148,13 +148,14 @@ score close to 0 represents a low similarity.
 
 
 \section{Implementation}
+\label{sect:concep_implementation}
 To implement the solution explained in the two previous sections, five different
 components have been used:
 
 \begin{itemize}
-    \item \textbf{Preprocessing}: It consists of the classes responisble for the
+    \item \textbf{Preprocessing}: It consists of the classes responsible for the
     preprocessing phase, its main class is $DataPreprocessing$ that assures the
-    different types of preprocessing (noramlization, sampling, embedding..) with
+    different types of preprocessing (normalization, sampling, embedding..) with
     the use of two other classes, $Embedder$ and $EmbeddingModel$ used to embed
     the textual columns of a dataset.
     \item \textbf{Hashing}: It is the component that assures the indexation
@@ -171,7 +172,7 @@ components have been used:
 \end{itemize}
 
 The figure \ref{fig:class_diagram} represents the class diagram with its
-diffrent components as explained in the previous paragraph.
+different components as explained in the previous paragraph.
 
 \begin{figure}[h]
     \centering

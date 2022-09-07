@@ -1,9 +1,35 @@
 \chapter*{Introduction}
 
-% As data continues to grow, it is becoming increasingly critical for
-% organizations to be able to easily manage and sort their datasets, whether they
-% come from databases, files or other sources. For this purpose, Talend already
-% offers the \href{https://www.talend.com/products/data-inventory/}{Data Inventory} tool
+As data continues to grow, it is becoming increasingly critical for
+organizations to be able to easily manage and sort their datasets, whether they
+come from databases, files or other sources. For this purpose, Talend already
+offers \href{https://www.talend.com/products/data-inventory/}{Talend Data
+Inventory}, a tool that makes it easy to find and understand your data with
+powerful and versatile search, provenance and dataset overview. It also helps to
+identify data silos in all data sources and eliminates them with reusable and
+shareable data assets.
+
+In order to continuously improve the Talend Data Inventory quality of service,
+Talend Lab team is interested in integrating a tool that can detect the
+similarities between datasets, a functionality that can be used in different use
+cases, the most relevant one is at the moment when the user introduces a new
+dataset, we want to find the ones that are similar to it, and by providing this
+information to the user we can propose some actions he can do, he can for
+example compare and merge the similar datasets or update the existing one with
+new records. Another use case is to assign a tag to a dataset according to the
+tags of the ones that are similar to it, for example if we find that a dataset
+is similar to two dataset with the tag "\textit{finance}", we can suggest this
+same tag to the user.
+
+In this work, we tackle the problem of detecting similarities between dataset as
+a \Acrfull{nns} problem, we explore the state of the art with focusing on
+\Acrfull{lsh} methods and we study their different versions and the metric they
+consider.
+
+We also present the solution built during this internship, in which we use a
+method of the \acrshort{lsh} family called Cross-Polytope, our goal is to scale
+its idea that was initiated to work at row level and get it work at the column
+level.
 
 % Nearest neighbor search is a topic that occupied a lot of interest in the
 % machine learning search field as its exhaustive solutions require a lot of time
