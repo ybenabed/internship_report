@@ -10,12 +10,12 @@ engineering itself.
 
 
 Through this report, I have exposed the work done in the project of my graduation
-internship which consisted in doing a state of the art and an implementation to
+internship which consisted of doing a state of the art and an implementation to
 address the need of having a tool able to detect the similarities between
 dataset based on their content with Cross-Polytope which is a \acrfull{lsh}
 method.
 
-I started this report with a definition on the \acrfull{nns} problem, how need
+I started this report with a definition of the \acrfull{nns} problem, how need
 it is to scale it to \acrfull{ann} and I exposed the metrics that it can use to
 measure the similarities or dissimilarities between data points. I continued by
 presenting \acrshort{lsh} family of methods as one of the methods that tackle
@@ -23,12 +23,13 @@ presenting \acrshort{lsh} family of methods as one of the methods that tackle
 different methods related to each one of the previously mentioned metrics.
 
 My solution starts by initiating a set of preprocessing over the dataset, it
-first needs to get its columns separated into textual and non-textual column,
+first needs to get its columns separated into textual and non-textual columns,
 embed the textual ones and get a sample from the second one. This solution is
 based on indexing the columns after preprocessing with Cross-Polytope LSH, a
 method that gives an estimation related to the angular distance. And to get the
 similarity measures with this solution, we need to get the buckets of each
-column with its indexes, and then compute the similarity between the indexes that share at least one bucket.
+column with its indexes, and then compute the similarity between the indexes
+that share at least one bucket.
 
 
 \section*{Perspective}

@@ -30,7 +30,7 @@ offering high-level tools and an easy-to-use syntax, it greatly optimizes the
 productivity of programmers and has become a leading language in exploratory
 data analysis and software development.
 
-Python have been chosen for implementing this project for the following reasons:
+Python has been chosen to implement this project for the following reasons:
 \begin{itemize}
     \item It provides a set of libraries, in the machine learning domain, which
     simplifies the development of our project.
@@ -53,7 +53,7 @@ to process matrices and arrays.
     \item \textbf{Jax}:
 Following its definition in its official repository \citep{jax_2022}, Google JAX
 is a machine learning framework for transforming numerical functions, the goal
-of using this framework is to take advantage from its version of Numpy that
+of using this framework is to take advantage of its version of Numpy that
 provides us with the possibility of doing the different calculations on GPU. It
 shows up that this choice is accurate if we take in consideration the number of
 matrix multiplication that we have to do in Cross-Polytope.
@@ -73,7 +73,7 @@ and between datasets
     \item \textbf{Plotly}:
 Plotly is a complete library for creating static, animated and interactive
 visualizations in Python. It is used in our solution to represent the graphs
-defined with IGraph with an interactive figures in the streamlit application.
+defined with IGraph with interactive figures in the streamlit application.
 
     \item \textbf{Transformers}:
 We use the Transformers library which is a state of the art pre-trained model
@@ -85,7 +85,7 @@ Roberta\ldots.
 
 
 \subsection{Streamlit}
-It is an open source framework in Python language dedicated for data scientist
+It is an open source framework in Python language dedicated for data scientists
 and machine learning engineers to create complete web applications in a short
 time as it provides a set of components that we need to have an interactive
 layout. It also provides a compatibility with different Python libraries which
@@ -106,11 +106,11 @@ suitable one in order to get a representation for the textual columns.
 
 \section{Architecture}
 The proof of concept has been implemented using two layers, the logic layer
-which is responsible of providing the features of indexation, storing, querying
+which is responsible for providing the features of indexation, storing, querying
 and similarity representation, while the second layer, the presentation layer,
-is responsible of building the user interface that offer the user the
+is responsible of building the user interface that offers the user the
 possibility to add and index a new dataset, display the stored indexes, look up
-for similarities and getting their representations.
+for similarities and get their representations.
 
 The figure \ref{fig:folder_organization} shows the organization of the project
 folder where $data\_fingerprinting$ represents the logic layer, and
@@ -133,7 +133,7 @@ $visual\_demo$ represents the presentation layer.
     \label{fig:folder_organization}
 \end{figure}
 
-The logic layer contains the five components introduction in the class diagram
+The logic layer contains the five components introduced in the class diagram
 in section \ref{sect:concep_implementation} which are: Preprocessing, Hashing,
 Query, Plotting, and Storing. We use SQLite database for storing and reading the
 indexes, it mainly interacts with the Storing component. The presentation layer
@@ -141,7 +141,7 @@ is divided into two components, the view component to build the user interface
 which is a multi-page layout, and the controller component which provides all
 the interactions between the view component and the logic layer.
 
-The figure \ref{fig:architecture} shows architecture of the proof of concept
+The figure \ref{fig:architecture} shows the architecture of the proof of concept
 built to demonstrate the functioning of the similarity detection process with
 LSH.
 
