@@ -2,7 +2,7 @@
 \addcontentsline{toc}{chapter}{Introduction}
 
 As data continues to grow, it is becoming increasingly critical for
-organizations to be able to easily manage and sort their datasets, whether they
+organizations to be able to easily manage and sort their datasets whether they
 come from databases, files or other sources. For this purpose, Talend already
 offers \href{https://www.talend.com/products/data-inventory/}{Talend Data
 Inventory}, a tool that makes it easy to find and understand your data with
@@ -14,12 +14,12 @@ In order to continuously improve the Talend Data Inventory quality of service,
 Talend Lab team is interested in integrating a tool that can detect the
 similarities between datasets, a functionality that can be used in different use
 cases, the most relevant one is at the moment when the user introduces a new
-dataset, we want to find the ones that are similar to it, and by providing this
-information to the user we can propose some actions he can do, he can for
+dataset, we want to find the ones that are similar to it. And by providing this
+information to the user, we can propose some actions he can do, he can for
 example compare and merge the similar datasets or update the existing one with
 new records. Another use case is to assign a tag to a dataset according to the
-tags of the ones that are similar to it, for example if we find that a dataset
-is similar to two dataset with the tag "\textit{finance}", we can suggest this
+tags of the ones that are similar to it, for example, if we find that a dataset
+is similar to two datasets with the tag "\textit{finance}", we can suggest this
 same tag to the user.
 
 In this work, we tackle the problem of detecting similarities between dataset as
@@ -29,15 +29,15 @@ consider.
 
 We present in the second place the solution built during this internship, in
 which we use a method of the \acrshort{lsh} family called Cross-Polytope, our
-goal is to scale its idea that was initiated to work at row level and get it
+goal is to scale its idea that was initiated to work at row level and get it to
 work at the column level, we propose for this a set of preprocessing methods and
 modifications. We show with this solution the different tests and experiments we
 have done to get the suitable configuration and parameters that make our
 solution return better results.
 
 We also show the steps of implementing the solution in the realization section,
-where we talk about the technologies and frameworks used, we also present
-the architecture that we use to implement a proof of concept.
+where we talk about the technologies and frameworks used, we also present the
+architecture that we use to implement a proof of concept.
 
 \section*{Organization of the report}
 \addcontentsline{toc}{section}{Organization of the report}
@@ -46,7 +46,7 @@ This report is organized in four chapters:
 
 \subsection*{Chapter 1: State of the art}
 In this chapter we define the \acrfull{nns} problem and its approximated
-version, then we present one of the methods that tackles it which is
+version, then we present one of the methods that tackle it which is
 \acrfull{lsh} family and how to formulate it. We also talk about the metrics
 that are used generally in data science problems and their estimations with
 \acrshort{lsh}. We end this chapter by presenting the common steps between all
@@ -71,16 +71,16 @@ accuracy of our solution and also to tune the hyper-parameters of the used
 
 
 \section*{Presentation of the company}
-Talend is a French company founded in 2006 providing open source solution of
+Talend is a French company founded in 2006 providing open source solutions of
 data integration and management. It is a leader of its industry. Talend's
 solutions are the most widely used and deployed in the world today.
 
 \subsection*{Talend products}
-We list in this paragraph some of the products provided by Talend:
+We list in this paragraph some of the products provided by Talend
 \subsubsection*{Talend Data Fabric}
 \href{https://www.talend.com/products/data-fabric/}{Talend Data Fabric} is a
-low-code platform that gives the users the possibility to unify their data,
-to provide a common language of data and to build data trusts.
+low-code platform that gives the users the possibility to unify their data, to
+provide a common language of data and to build data trusts.
 
 \subsubsection*{Talend Data Integration}
 \href{https://www.talend.com/products/integrate-data/}{Talend Data Integration} 
@@ -101,13 +101,13 @@ learning for addressing data quality issues.
 
 
 % Nearest neighbor search is a topic that occupied a lot of interest in the
-% machine learning search field as its exhaustive solutions require a lot of time
-% and resources to find the solution. Due to the complexity in time of the
+% machine learning search field as its exhaustive solutions require a lot of
+% time and resources to find the solution. Due to the complexity in time of the
 % exhaustive solutions when the number of points and their dimension get bigger
 % (curse of dimensionality), the exact nearest neighbor problem is then
 % reformulated into (\Acrfull{ann}).
 
-% \acrfull{lsh} is one of the methods that tackles the problem of the approximate
-% nearest neighbor search, it consists of using the hashing technique to map the
-% near data points to the same buckets with high probability, and map the distant
-% one to the same buckets with low probability.
+% \acrfull{lsh} is one of the methods that tackles the problem of the
+% approximate nearest neighbor search, it consists of using the hashing
+% technique to map the near data points to the same buckets with high
+% probability, and map the distant one to the same buckets with low probability.

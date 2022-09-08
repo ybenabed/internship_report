@@ -10,8 +10,8 @@ global approach shared by all of them, it consists of three steps:
 This step consists of applying a set of hashing functions $H = (h_1, h_2, ..,
     h_m)$ on the $n$ data points to get their \glspl{signature}. It's the step that
 makes the difference between the hashing methods as it is what makes the
-effect of choose the hash family clearer. At the end of this step, the
-result is a matrix where each data points is presented by its signature,
+effect of choosing the hash family clearer. At the end of this step, the
+result is a matrix where each data point is presented by its signature,
 this matrix is called signature matrix.
 
 $$\begin{bmatrix} h_1 (x_1) & h_1 (x_2) & \cdots & h_1 (x_n) \\
@@ -21,11 +21,11 @@ $$\begin{bmatrix} h_1 (x_1) & h_1 (x_2) & \cdots & h_1 (x_n) \\
 
 This step of bucketing is contributing on reducing the complexity of the search
 process by reducing the dimension of the data points and representing them on a
-latent space. It lets the search process dealing with a reduced size of vector
+latent space. It lets the search process deal with a reduced vector size
 rather than to perform on the entire vectors.
 
 \subsection{Amplification}
-The amplification step the signature matrix from the previous section is divided
+In the amplification step, the signature matrix from the previous section is divided
 into $b$ bands each one of size $r$. This means that, for a set of hashing
 functions ($h_1$, $h_2$, $\cdots$, $h_p$) such that $p = b*r$, we will have this
 set divided into $b$ sub-sets ([$h_{1}$, $\cdots$ $h_{r}$], [$h_{r+1}$, $\cdots$
@@ -39,7 +39,7 @@ set divided into $b$ sub-sets ([$h_{1}$, $\cdots$ $h_{r}$], [$h_{r+1}$, $\cdots$
     \label{fig:amplification_divide_rb}
 \end{figure}
 
-The intuition behind doing such dividing, is to minimize the collisions between
+The intuition behind doing such dividing is to minimize the collisions between
 points that are not similar. In another way, we aim to minimize the false
 positives that may occur when we consider one hash value at a time while making
 buckets by not considering one hash value at a time but regrouping them into $b$

@@ -1,7 +1,7 @@
 Minwise-Hashing or MinHash LSH is one of the methods of LSH, it was proposed to
 estimate the Jaccard similarity metric  between data points of any sizes. It
 relies on the fact that applying a random permutation to the set of data points,
-the chance that the smallest item under this permutation in sets $A$ and $B$ are
+the chance that the smallest items under this permutation in sets $A$ and $B$ are
 precisely the same as their similarity of Jaccard. \citep{yu_yun_2022}
 
 \subsubsection{Formulation}
@@ -10,8 +10,8 @@ data points, and take the argument corresponding to the minimum value of each
 permuted column (or corresponding to the first occurrence of 1 in case of binary
 data).
 
-Knowing that the permutations consume lot of memory when the number of data
-points get bigger, it becomes more complicated to use them. A new formulation
+Knowing that the permutations consume a lot of memory when the number of data
+points gets bigger, it becomes more complicated to use them. A new formulation
 has occurred, where each set is converted to a MinHash signature using a set of
 $m$ minwise-hashing functions $(h_{min_1}, h_{min_2}, \cdot, h_{min_m})$. A
 minwise-hashing function's value $h_{min}(X)$ of a set $X$ is obtained by taking

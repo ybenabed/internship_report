@@ -13,7 +13,7 @@ side indicates a hashing value of 0 (sometimes -1 is used instead).
 \end{figure}
 
 The figure \ref{fig:simhash_lines} shows an example on how are the hashing
-values determined according to their positions with the randomly draw lines.
+values determined according to their positions with the randomly drawn lines.
 
 \subsubsection{Formulation}
 SimHash method takes $p$ random normalized vectors, and compute the scalar
@@ -22,9 +22,8 @@ identical to the cosine similarity since the vectors are normalized):
 $$
     h_p(x_i) = 0 \; \; \; \; if \; \; \; w_i . x_i \leq 0 \; \; ; \; \; h_p(x_i) = 1 \; \; if \; \; w_i . x_i > 0
 $$
-The probability of collision as we saw in section \ref{subsect:angular_metric}
-(for one hash) is: $1 -\frac{\theta}{\pi}$. Now, having $p$ hashing
-functions it becomes:
+The collision probability, as shown in section \ref{subsect:angular_metric}
+(for one hash), is: $1 -\frac{\theta}{\pi}$. Now, having $p$ hashing functions, it becomes:
 $$
     P(H(x_i) = H(x_j) ) = (1 - \frac{\theta}{\pi})
 $$
@@ -47,12 +46,12 @@ relies on Simhash called SortingLSH.
 
 The intuition behind the SortingLSH algorithm is to sort the hashing vectors
 given by the Simhash method, and group them to form clusters. It is a method
-that processes over the simHash clusters, in order to give more control on the
+that processes over the SimHash clusters, in order to give more control on the
 size of each cluster which is an important criteria in the case of Ads to
 assure the user's privacy.
 
 Simhash algorithm is formulated given a dataset $D$ of dimension $(n, d)$, we
-compute for each data point its hashing vector as in the simHash method:
+compute for each data point its hashing vector as in the SimHash method:
 $(h_1=H_p (x_1) , h_2=H_p (x_2) ,.., h_n=H_p (x_n))$. Those vectors are sorted
 in a \gls{lexicographical} order and then assigned to clusters by generating
 contiguous groups of at least $k$ hashes.

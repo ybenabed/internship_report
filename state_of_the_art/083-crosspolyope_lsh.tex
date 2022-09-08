@@ -5,10 +5,10 @@ the fact that elements that are close to each other (in the two previously
 mentioned metrics) are more likely to be close to the same axis after applying a
 random rotation. \citep{andoni_practicalsh_2015}
 
-The figure \ref{fig:crosspolytope_example} show below shows how the
-cross-polytope hashing works. We transform the data points to bring them to a
-unit sphere, and then apply a random rotation to each one of them. The hash
-value of each point will be the index of its nearest axis.
+The figure \ref{fig:crosspolytope_example} shows how the cross-polytope hashing
+works. We transform the data points to bring them to a unit sphere, and then
+apply a random rotation to each one of them. The hash value of each point will
+be the index of its nearest axis.
 
 \begin{figure}[ht]
     \centering
@@ -18,14 +18,14 @@ value of each point will be the index of its nearest axis.
 \end{figure}
 
 \subsubsection{Formulation}
-Let $\mathcal{H}$ be a hash family for points on a unit sphere  $S^{d-1} \subset
-    R^d$, and the random rotation matrix $A \in \mathbb{R}^{d*d}$ with i.i.d
-gaussian entries. To get the hashing of a data point $x \in S^{d-1}$ with
+Let $\mathcal{H}$ be a hash family of points on a unit sphere  $S^{d-1} \subset
+R^d$, and the random rotation matrix $A \in \mathbb{R}^{d*d}$ with i.i.d
+Gaussian entries. To get the hashing of a data point $x \in S^{d-1}$ with
 cross-polytope LSH, we compute its normalized random rotation $y = \frac{A x
-    }{\Vert{A x} \Vert} \in  S^{d-1}$ and then from basis vectors $\lbrace \pm
-    e_i \; \vert 1 \leq i \leq d \rbrace$ the closest one.
+}{\Vert{A x} \Vert} \in  S^{d-1}$ and then from basis vectors $\lbrace \pm
+e_i \; \vert 1 \leq i \leq d \rbrace$ the closest one.
 
-This basis vector is the hash of $x$ with cross-polytope LSH. More formally we
+This basis vector is the hash of $x$ with cross-polytope LSH. More formally, we
 write the hashing process as follow:
 $$
     \mathcal{H}(x) = \arg \min_{u = \lbrace \pm e_i \rbrace} \lVert \frac{A x }{\Vert{A x} \Vert} - u \rVert
@@ -85,7 +85,7 @@ $$
 
 This method can find its use in different applications like the comparison of
 image feature vectors, speaker representations, and so on. Its main advantage is
-that it come with theoretical guarantees to give a good approximation of the
-angular and euclidean (on a unit sphere) metrics , and also with experimental
+that it comes with theoretical guarantees to give a good approximation of the
+angular and Euclidean (on a unit sphere) metrics , and also with experimental
 improvements on its complexity for the large datasets.
 \citep{andoni_practicalsh_2015}

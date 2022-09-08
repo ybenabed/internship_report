@@ -38,10 +38,10 @@ A random sample of size \mbox{DEFAULT\_DATA\_SIZE} is picked for each column
 and then normalized to have the data ready to be indexed with cross-polytope.
 
 \subsubsection{Textual columns}
-The textual columns have a different type of preprocessing, is it based on
-embedding them with a pre-trained embedding model according to a certain
-approach that indicates how the embedding model is used over all the cells to
-have as a result one vector representing the column content. Four approaches
+The textual columns have a different type of preprocessing, it is based on
+embedding them with a pre-trained embedding model and a certain approach, the
+embedding approach indicates how the embedding model is used over all the cells
+to have as a result one vector representing the column content. Four approaches
 will be tested to pick the most accurate one.
 
 \paragraph{Approach 1}: The idea of this approach is to concatenate the texts of
@@ -92,7 +92,7 @@ to apply by Cross-Polytope LSH, and the number of probes to consider by
 Multi-Probe. The choice of these two parameters is explained in section
 \ref{chap:exp_and_tests}
 
-This step outputs two group of indexes, the group of textual column indexes, and
+This step outputs two groups of indexes, the group of textual column indexes, and
 the group of non-textual column indexes. Each column index is represented by an
 array of 2 dimensions, where each row represents the result of the corresponding
 hashing function, and each column represents an element of the probing sequence
@@ -126,7 +126,7 @@ following attributes:
 \section{Similarity Detection}
 This second part of our solution is meant to proceed for the similarity
 detection between two dataset indexes. As described previously, we scale the
-similarity detection between dataset to the similarity detection between their
+similarity detection between datasets to the similarity detection between their
 columns, and from the column similarities we can give a score representing the
 dataset similarities. 
 

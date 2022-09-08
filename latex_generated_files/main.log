@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  7 SEP 2022 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  8 SEP 2022 10:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -847,12 +847,7 @@ File: figures//state_of_the_art/metrics/jaccard-dist.png Graphic file (type png)
 <use figures//state_of_the_art/metrics/jaccard-dist.png>
 Package pdftex.def Info: figures//state_of_the_art/metrics/jaccard-dist.png  used on input line 17.
 (pdftex.def)             Requested size: 282.05305pt x 283.0568pt.
-
-Overfull \hbox (1.10098pt too wide) in paragraph at lines 22--26
-[]\OT1/cmr/m/n/12 To get an es-ti-ma-tion of the Jac-card met-ric us-ing LSH is de-fined as: $\OML/cmm/m/it/12 H\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 min\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ))$.
- []
-
-[8
+ [8
 
  <./figures//state_of_the_art/metrics/jaccard-dist.png>]
 <figures//state_of_the_art/metrics/hamming-dist.png, id=459, 283.0575pt x 282.05376pt>
@@ -939,9 +934,6 @@ Package pdftex.def Info: figures//state_of_the_art/methods/cross-polyope.png  us
  (./conception.tex
 Chapter 2.
 
-LaTeX Warning: Reference `sect:possible_metrics' on page 21 undefined on input line 5.
-
-
 Overfull \hbox (43.87047pt too wide) in paragraph at lines 33--36
 \OT1/cmr/m/n/12 2, for this we'll set this size on a value be-tween 128 to 2048, and we'll call it []. 
  []
@@ -952,13 +944,13 @@ Overfull \hbox (43.87047pt too wide) in paragraph at lines 33--36
 
 
 ] [22]
-<figures//conception/indexing-whitebg.png, id=609, 1156.32pt x 424.58624pt>
+<figures//conception/indexing-whitebg.png, id=610, 1156.32pt x 424.58624pt>
 File: figures//conception/indexing-whitebg.png Graphic file (type png)
 <use figures//conception/indexing-whitebg.png>
 Package pdftex.def Info: figures//conception/indexing-whitebg.png  used on input line 106.
 (pdftex.def)             Requested size: 455.24411pt x 167.15579pt.
  [23 <./figures//conception/indexing-whitebg.png>]
-<figures//conception/class-diagram.png, id=617, 1183.42125pt x 668.4975pt>
+<figures//conception/class-diagram.png, id=618, 1183.42125pt x 668.4975pt>
 File: figures//conception/class-diagram.png Graphic file (type png)
 <use figures//conception/class-diagram.png>
 Package pdftex.def Info: figures//conception/class-diagram.png  used on input line 179.
@@ -978,7 +970,7 @@ Chapter 3.
 
 
 ] [27]
-<figures//realization/application.png, id=647, 196.735pt x 207.77625pt>
+<figures//realization/application.png, id=648, 196.735pt x 207.77625pt>
 File: figures//realization/application.png Graphic file (type png)
 <use figures//realization/application.png>
 Package pdftex.def Info: figures//realization/application.png  used on input line 122.
@@ -988,7 +980,7 @@ Overfull \hbox (14.63963pt too wide) in paragraph at lines 122--123
  [][] 
  []
 
-<figures//realization/logic.png, id=648, 195.73125pt x 203.76125pt>
+<figures//realization/logic.png, id=649, 195.73125pt x 203.76125pt>
 File: figures//realization/logic.png Graphic file (type png)
 <use figures//realization/logic.png>
 Package pdftex.def Info: figures//realization/logic.png  used on input line 126.
@@ -998,7 +990,7 @@ Overfull \hbox (13.6359pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
-<figures//realization/presentation.png, id=649, 196.735pt x 182.6825pt>
+<figures//realization/presentation.png, id=650, 196.735pt x 182.6825pt>
 File: figures//realization/presentation.png Graphic file (type png)
 <use figures//realization/presentation.png>
 Package pdftex.def Info: figures//realization/presentation.png  used on input line 130.
@@ -1014,7 +1006,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--132
  []
 
 [28 <./figures//realization/application.png> <./figures//realization/logic.png> <./figures//realization/presentation.png>]
-<figures//realization/architecture.png, id=659, 730.83037pt x 395.67825pt>
+<figures//realization/architecture.png, id=660, 730.83037pt x 395.67825pt>
 File: figures//realization/architecture.png Graphic file (type png)
 <use figures//realization/architecture.png>
 Package pdftex.def Info: figures//realization/architecture.png  used on input line 150.
@@ -1024,7 +1016,7 @@ Package pdftex.def Info: figures//realization/architecture.png  used on input li
 
  (./tests.tex
 Chapter 4.
-<figures//tests/labelled_entry.png, id=668, 794.97pt x 261.97874pt>
+<figures//tests/labelled_entry.png, id=669, 794.97pt x 261.97874pt>
 File: figures//tests/labelled_entry.png Graphic file (type png)
 <use figures//tests/labelled_entry.png>
 Package pdftex.def Info: figures//tests/labelled_entry.png  used on input line 67.
@@ -1038,20 +1030,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 [][]\OT1/cmr/m/n/12 Neural-Net Lan-guage Mod-els[]
  []
 
-<figures//tests/embedding_metric.png, id=683, 599.38931pt x 210.93806pt>
+<figures//tests/embedding_metric.png, id=684, 599.38931pt x 210.93806pt>
 File: figures//tests/embedding_metric.png Graphic file (type png)
 <use figures//tests/embedding_metric.png>
-Package pdftex.def Info: figures//tests/embedding_metric.png  used on input line 51.
+Package pdftex.def Info: figures//tests/embedding_metric.png  used on input line 52.
 (pdftex.def)             Requested size: 455.24411pt x 160.2116pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31 <./figures//tests/labelled_entry.png>]
-Overfull \hbox (30.38663pt too wide) in paragraph at lines 69--96
+Overfull \hbox (30.38663pt too wide) in paragraph at lines 70--97
  [] 
  []
 
@@ -1076,25 +1068,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]) [37] (latex_generated_files/main.aux (latex_generated_files/acknowledgement.aux) (latex_generated_files/abstract.aux) (latex_generated_files/general_introduction.aux) (latex_generated_files/state_of_the_art.aux) (latex_generated_files/conception.aux) (latex_generated_files/realization.aux) (latex_generated_files/tests.aux) (latex_generated_files/conclusion.aux))
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B11ED8F24749DB9FCC6D89A1C317E385;5571.
  ) 
 Here is how much of TeX's memory you used:
  20250 strings out of 478287
  338599 string characters out of 5849290
- 686031 words of memory out of 5000000
+ 686065 words of memory out of 5000000
  37783 multiletter control sequences out of 15000+600000
  478889 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,17n,91p,1177b,659s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on latex_generated_files/main.pdf (45 pages, 1491161 bytes).
+Output written on latex_generated_files/main.pdf (45 pages, 1491068 bytes).
 PDF statistics:
- 869 PDF objects out of 1000 (max. 8388607)
- 723 compressed objects within 8 object streams
+ 870 PDF objects out of 1000 (max. 8388607)
+ 724 compressed objects within 8 object streams
  187 named destinations out of 1000 (max. 500000)
  446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
